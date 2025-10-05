@@ -1,0 +1,9 @@
+{
+    "template": "fade_in_meme@0.2",
+    "image_path": "assets/images/testimage.jpg",
+    "caption_text": "we said \"5 minutes\" and started a whole new life",
+    "music_path": "assets/music/testsong.mp3",
+    "watermark_path": "assets/logos/appeal_black.png",
+    "export": { "filename": "output/example.mp4" }
+  }
+  

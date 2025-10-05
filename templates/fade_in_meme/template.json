@@ -1,0 +1,61 @@
+{
+    "name": "fade_in_meme",
+    "version": "0.2",
+    "canvas": { "width": 1080, "height": 1350, "fps": 30, "duration": 6.13 },
+  
+    "video": {
+      "effects": { "fade_in": 1.5 }
+    },
+  
+    "layers": [
+      {
+        "type": "image",
+        "bind": "image_path",
+        "fit": "cover",
+        "position": { "x": 0, "y": 0 },
+        "size": { "w": "100%", "h": "100%" }
+      },
+      {
+        "type": "shape",
+        "shape": "rect",
+        "color": "#FFFFFF",
+        "position": { "x": 0, "y": 0 },
+        "size": { "w": "100%", "h": 270 }
+      },
+      {
+        "type": "text",
+        "bind": "caption_text",
+        "font": "assets/fonts/Inter-Bold.ttf",
+        "font_size": 50,
+        "color": "#111111",
+        "max_lines": 2,
+        "wrapping": "wrap_then_ellipsize",
+        "align": "center",
+        "text_box": { "x": 36, "y": 24, "w": 1008, "h": 222 }
+      },
+      {
+        "type": "image",
+        "bind": "watermark_path",
+        "opacity": 1.0,
+        "scale_from_source": 0.3,
+        "anchor": "bottom_left",
+        "offset_pct_of_canvas": { "x": 4, "y": 4 }
+      }
+    ],
+  
+    "audio": {
+      "bind": "music_path",
+      "volume": 1.0,
+      "effects": { "fade_in": 1.5, "fade_out": 0.0 },
+      "loop": false,
+      "trim_to_video": true
+    },
+  
+    "export": {
+      "codec": "libx264",
+      "audio_codec": "aac",
+      "bitrate": "6M",
+      "preset": "medium"
+    }
+  }
+  
